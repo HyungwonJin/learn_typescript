@@ -1,9 +1,15 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "target": "ES6",
+        "esModuleInterop": true,
+        "target": "ES5",
+        "moduleResolution": "node",
+        "outDir": "dist",
+        "baseUrl": ".",
         "sourceMap": true,
+        "downlevelIteration": true,
+        "noImplicitAny": false,
+        "paths": {"*":["node_modules/*"]}
     },
-    "include": ["index.ts"],
-    "exclude": ["node_modules"]
+    "include": ["src/**/*"]
 }

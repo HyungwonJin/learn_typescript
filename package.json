@@ -6,10 +6,13 @@
   "dependencies": {
     "typescript": "^4.3.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/node": "^16.3.3",
+    "ts-node": "^10.1.0"
+  },
   "scripts": {
-    "start": "node index.js",
-    "prestart": "tsc"
+    "dev": "ts-node src",
+    "build": "tsc && node dist"
   },
   "author": "",
   "license": "ISC"
